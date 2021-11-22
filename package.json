@@ -1,51 +1,54 @@
 {
-  "name": "discord.ts-example",
-  "version": "1.0.0",
-  "description": "discordx bot example",
-  "keywords": [
-    "discordx",
-    "discord.ts",
-    "discord.js",
-    "bot",
-    "discord",
-    "typescript"
-  ],
-  "homepage": "https://github.com/oceanroleplay/discord.ts-example#readme",
-  "bugs": {
-    "url": "https://github.com/oceanroleplay/discord.ts-example/issues"
+  "name": "bot-example",
+  "version": "0.0.1",
+  "description": "bot-example",
+  "private": true,
+  "engines": {
+    "node": ">=16.6.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oceanroleplay/discord.ts-example.git"
-  },
-  "license": "MIT",
-  "author": "Indian Ocean Roleplay",
-  "contributors": [
-    "Harry <indianoceanroleplay@gmail.com> (https://github.com/oceanroleplay)"
-  ],
-  "type": "module",
-  "main": "build/client.js",
+  "engineStrict": true,
   "scripts": {
-    "build": "tsc",
-    "dev": "node --loader ts-node/esm/transpile-only src/client.ts",
-    "start": "nodemon --exec node --loader ts-node/esm/transpile-only src/client.ts",
-    "serve": "node build/client.js"
+    "dev": "tsnd --respawn --files --debug -r tsconfig-paths/register src/index.ts",
+    "lint": "eslint ./src --quiet",
+    "check-types": "tsc --noEmit",
+    "build": "webpack --env production --mode production --config ./webpack.config.js",
+    "launch": "yarn build && node dist/bundle.js"
+  },
+  "author": "Matthieu Brillaxis",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "dotenv-webpack": "^7.0.3",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-typescript": "^3.0.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "ts-loader": "^9.2.6",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.4.4",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@discordx/importer": "^1.1.2",
-    "@discordx/utilities": "^3.1.5",
-    "discord.js": "^13.3.1",
-    "discordx": "^9.0.1",
-    "reflect-metadata": "^0.1.13"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15",
-    "prettier": "^2.4.1",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
-  },
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordx/utilities": "^2.1.1",
+    "@ef-carbon/tspm": "^2.2.5",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.3.0-dev.1635465892.5d987ee",
+    "discordx": "^8.0.0-dev.1635445429.c9e9195",
+    "dotenv": "^10.0.0",
+    "module-alias": "^2.2.2",
+    "node-fetch": "^2.6.6",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.4.0",
+    "ws": "^8.2.3"
   }
 }
