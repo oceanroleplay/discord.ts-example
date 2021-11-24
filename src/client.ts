@@ -20,7 +20,7 @@ const client = new Client({
 });
 
 client.once("ready", async () => {
-  // init all applicaiton commands
+  // init all application commands
   await client.initApplicationCommands({
     guild: { log: true },
     global: { log: true },
