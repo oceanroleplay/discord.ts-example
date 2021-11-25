@@ -28,7 +28,7 @@ class buttonExample {
     const row = new MessageActionRow().addComponents(helloBtn);
 
     interaction.editReply({
-      content: `<@${user}>, Say hello to bot`,
+      content: `${user}, Say hello to bot`,
       components: [row],
     });
   }
