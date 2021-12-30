@@ -36,7 +36,7 @@
     "@discordx/pagination": "^1.0.1",
     "@discordx/utilities": "^3.2.0",
     "discord.js": "^13.5.0",
-    "discordx": "^9.1.6",
+    "discordx": "^9.1.7",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
