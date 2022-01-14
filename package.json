@@ -39,7 +39,7 @@
     "@discordx/utilities": "^3.3.0",
     "@koa/router": "^10.1.1",
     "discord.js": "^13.5.1",
-    "discordx": "^9.1.9",
+    "discordx": "^9.1.10",
     "koa": "^2.13.4",
     "reflect-metadata": "^0.1.13"
   },
