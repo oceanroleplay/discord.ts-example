@@ -6,13 +6,17 @@ import { Koa } from "@discordx/koa";
 
 export const client = new Client({
   simpleCommand: {
-    prefix: "/",
+    prefix: "!",
   },
   intents: [
-    Intents.FLAGS.GUILDS
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MEMBERS,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+    Intents.FLAGS.GUILD_VOICE_STATES,
   ],
   // If you only want to use global commands only, comment this line
-  //botGuilds: [(client) => client.guilds.cache.map((guild) => guild.id)],
+  botGuilds: [(client) => client.guilds.cache.map((guild) => guild.id)],
 });
 
 client.once("ready", async () => {
