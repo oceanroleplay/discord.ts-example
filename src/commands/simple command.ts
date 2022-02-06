@@ -9,7 +9,7 @@ import {
 
 @Discord()
 class simpleCommandExample {
-  @SimpleCommand("hello", { aliases: ["hi"] })
+  @SimpleCommand("salut", { aliases: ["hi"] })
   hello(command: SimpleCommandMessage) {
     command.message.reply(`👋 ${command.message.member}`);
   }
@@ -35,6 +35,8 @@ class simpleCommandExample {
   simpleLikeit(command: SimpleCommandMessage) {
     this.likeit(command.message);
   }
+
+  @SimpleCommand("cacat")
 
   @Slash("likeit")
   slashLikeit(command: CommandInteraction) {
