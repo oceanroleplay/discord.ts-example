@@ -35,7 +35,7 @@
     "@discordx/importer": "^1.1.2",
     "@discordx/koa": "^1.0.8",
     "@discordx/pagination": "^2.0.0",
-    "@discordx/utilities": "^3.4.2",
+    "@discordx/utilities": "^4.0.0",
     "@koa/router": "^10.1.1",
     "discord.js": "^13.6.0",
     "discordx": "^9.3.3",
