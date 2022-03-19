@@ -81,16 +81,16 @@ For windows user only
 
 ```bash
 # For command prompt
-set BOT_TOKEN=REPLACE_THIS_WITH_YOUR_TOKEN
+set BOT_TOKEN=REPLACE_THIS_WITH_YOUR_BOT_TOKEN
 
 # For powershell
-$env:BOT_TOKEN = "REPLACE_THIS_WITH_YOUR_TOKEN"
+Set-Variable -Name "BOT_TOKEN" -Value "REPLACE_THIS_WITH_YOUR_BOT_TOKEN"
 ```
 
 For linux user only
 
 ```bash
-export BOT_TOKEN=REPLACE_THIS_WITH_YOUR_TOKEN
+export BOT_TOKEN=REPLACE_THIS_WITH_YOUR_BOT_TOKEN
 ```
 
 **Start your bot**
