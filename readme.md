@@ -1,3 +1,16 @@
+# ⚠️ Moved to [discordx-templates](https://github.com/oceanroleplay/discordx-templates/tree/main/4-music-player-ytdl)
+
+## Contact Details
+
+GitHub: https://github.com/oceanroleplay
+
+Email: indianoceanroleplay@gmail.com
+
+Discord: Harry#5791
+
+Discord Server: https://discord-ts.js.org/discord
+___
+
 <div>
   <p align="center">
     <a href="https://discord-ts.js.org" target="_blank" rel="nofollow">
