@@ -1,4 +1,4 @@
-# ⚠️ Moved to [discordx-templates](https://github.com/oceanroleplay/discordx-templates/tree/main/4-music-player-ytdl)
+# ⚠️ Moved to [discordx-templates](https://github.com/oceanroleplay/discordx-templates/tree/main/1-starter)
 
 ## Contact Details
 
